@@ -34,13 +34,38 @@ There are 3 distinct parts to this project : Libc functions, Additional function
 
 This part contains reimplementations of a set of functions from the Libc. They have the same prototypes and behaviors as the originals, and they do not rely on any external functions.
 
+### Part 2 - Additional functions
+
+This part contains reimplementations of functions that either not included in the Libc, or exist in a different form.
+
+### Part 3 - Linked lists
+
+This part contains functions using the following structure to manipulate linked lists : 
+```
+typedef struct s_list
+{
+void              *content;
+struct s_list     *next;
+}                  t_list;
+```
+
+## How to use Libft ?
+
+## Resources
+
+## AI use
+
+## List of all the functions of Libft
+
+### Part 1 - Libc functions
+
 #### ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
 
-Return a binary number (0 or 1) depending on whether or not they are what we are testing.
+Return a binary number (0 or 1) depending on whether or not the character matches the tested class
 
-#### ft_strlen
+#### ft_toupper, ft_tolower
 
-Returns the length (= the amount of bytes in use) of the string. 
+Converts uppercase to lowercase and vice versa.
 
 #### ft_memset
 
@@ -48,7 +73,11 @@ Fills memory with a constant byte.
 
 #### ft_bzero
 
-Erases data by writing zeros to a set area of memory.
+Erases data by writing zeros to an area of memory.
+
+#### ft_calloc
+
+Allocates memory and sets it to zero.
 
 #### ft_memcpy
 
@@ -58,6 +87,126 @@ Copies memory from one area to another. The memory areas must not overlap.
 
 Copies memory from one area to another, as though the copied bytes are temporarily stored. The memory areas may then overlap.
 
+#### ft_memchr
+
+Scans a memory area for the first instance of a character passed as argument.
+
+#### ft_memcmp
+
+Compares two memory areas byte per byte. Returns the difference of the first non-matching couple of bytes.
+
+#### ft_strlen
+
+Returns the length (= the amount of bytes in use) of the string. 
+
+#### ft_strdup
+
+Duplicates a string by allocating memory for the new string before filling it with the a copy of the data of the initial string.
+
+#### ft_strlcpy
+
+Copies a string to another. Takes the size (= the amount of memory reserved for the entire data structure) of the buffer into consideration and guarantees to NUL-terminate the result, making it a safer version of str(n)cpy.
+
+#### ft_strlcat
+
+Concatenates two strings. Takes the size (= the amount of memory reserved for the entire data structure) of the destination into consideration and guarantees to NUL-terminate the result, making it a safer version of str(n)cat.
+
+#### ft_strchr, ft_strrchr
+
+Locates the first/last occurence of a character in a string.
+
+#### ft_strnstr
+
+Locates a substring within n characters of a string.
+
+#### ft_strncmp
+
+Compares two strings character per character. Returns the difference of the ascii indexes of the first non-matching couple of characters within n characters.
+
+#### ft_atoi
+
+Converts a string to an integer.
+
 ### Part 2 - Additional functions
 
+#### ft_itoa
+
+Allocates memory and returns a string representing the integer received as an argument.
+
+#### ft_substr
+
+Allocates memory and returns a substring from a string.
+
+#### ft_strjoin
+
+Concatenates two strings after allocating memory for the resulting string.
+
+#### ft_strtrim
+
+Allocates memory and returns a copy of a string without set characters, removed from the beginning and the end.
+
+#### ft_split
+
+Allocates memory and returns an array of strings obtained by splitting the initial string each time a character sent as parameter is encountered.
+
+#### ft_strmapi
+
+Applies the function f to each character of a string, storing the result in a new string.
+
+#### ft_striteri
+
+Applies the function f to each character of a string, modifying the initial string.
+
+#### ft_putchar_fd
+
+Outputs a character to a specified file descriptor.
+
+#### ft_putstr_fd
+
+Outputs a string to a specified file descriptor.
+
+#### ft_putendl_fd
+
+Outputs a string to a specified file descriptor, followed by a new line.
+
+#### ft_putnbr_fd
+
+Outputs an integer to a specified file descriptor.
+
 ### Part 3 - Linked lists
+
+#### ft_lstnew
+
+Allocates memory and returns a new node.
+
+#### ft_lstadd_front
+
+Adds a node at the beginning of the list.
+
+#### ft_lstsize
+
+Counts the number of nodes in the list.
+
+#### ft_lstlast
+
+Returns the last node of the list.
+
+#### ft_lstadd_back
+
+Adds a node at the end of the list.
+
+#### ft_lstdelone
+
+Takes a node as parameter and frees its content using a function passed as parameter.
+
+#### ft_lstclear
+
+Deletes and frees a given node and all of the next ones using a function passed as parameter and the function **free**.
+
+#### ft_lstiter
+
+Iterates through a list and applies a function to the content of each node.
+
+#### ft_lstmap
+
+Iterates through a list, applies a function to each node’s content, and creates a new list resulting of the successive applications of the function.
