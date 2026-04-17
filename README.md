@@ -32,10 +32,31 @@ There are 3 distinct parts to this project : Libc functions, Additional function
 
 ### Part 1 - Libc functions
 
-This part contains reimplementations of a set of functions from the Libc. They have the same prototypes and behaviors as the originals, and they do not rely on any additional functions.
+This part contains reimplementations of a set of functions from the Libc. They have the same prototypes and behaviors as the originals, and they do not rely on any external functions.
 
 #### ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
 
+Return a binary number (0 or 1) depending on whether or not they are what we are testing.
+
+#### ft_strlen
+
+Returns the length (= the amount of bytes in use) of the string. 
+
+#### ft_memset
+
+Fills memory with a constant byte.
+
+#### ft_bzero
+
+Erases data by writing zeros to a set area of memory.
+
+#### ft_memcpy
+
+Copies memory from one area to another. The memory areas must not overlap.
+
+#### ft_memmove
+
+Copies memory from one area to another, as though the copied bytes are temporarily stored. The memory areas may then overlap.
 
 ### Part 2 - Additional functions
 
