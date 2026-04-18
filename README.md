@@ -62,16 +62,7 @@ struct s_list     *next;
 
 As said before, a **static library** is a collection of precompiled code that gets bundled directly into an executable at compile time.
 
-Creating the **libft.a** file is done through the Makefile, by running : 
-
-```
-make
-```
-to obtain **libft.a**, or
-```
-make clean
-```
-to also remove all the object files (.o).
+Creating the **libft.a** file is done through the Makefile, by running `make` to obtain **libft.a**, or `make clean` to also remove all the object files (.o).
 
 Our static library is now created ! To use it with a main.c file, the command is : 
 
@@ -79,9 +70,9 @@ Our static library is now created ! To use it with a main.c file, the command is
 gcc main.c -L. -lft -o program
 ```
 
-The *-L* flag tells the linker where to look for libraries, adding *.* right after means "in the current directory".
+The `-L` flag tells the linker where to look for libraries, adding `.` right after means "in the current directory".
 
-The *-lft* flag tells the linker which library to link, the "lib" prefix being implied in the *-l* flag.
+The `-lft` flag tells the linker which library to link, the *lib* prefix being implied in the `-l` flag.
 
 Basically, once **libft.a** is created, all the functions are packaged into one file and there is no need to list and/or (re)compile each and everyone of them.
 
