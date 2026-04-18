@@ -26,13 +26,13 @@ Basically, **static libraries** are just a collection of object files that are m
 
 ### What are the main benefits of a static library ? 
 
-* Reusability
+#### Reusability
 Once created, the static library **libft.a** can be reused by just linking it.
 
-* Portability
+#### Portability
 The executable works anywhere, the library file is no longer needed to run the program.
 
-* Organisation
+#### Organisation
 Keeps a project clean, without multiple .c files.
 
 ## What is **in** Libft ?
