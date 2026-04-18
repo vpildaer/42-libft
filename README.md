@@ -3,6 +3,15 @@
 # Libft - 42 Belgium
 My very first own library of functions, based on some of the Standard C library functions, as well as some additional ones, aiming at dealing with strings, files  and linked lists.
 
+## Table of Contents
+
+* [What is Libft ? - Description](#what-is-libft-description)
+* [What is in Libft ?](#what-is-in-libft)
+* [How to use Libft ? - Instructions](#how-to-use-libft-instructions)
+* [Resources](#resources)
+* [AI use](#ai-use)
+* [List of all the functions of Libft](#list-of-all-the-functions-of-libft)
+
 ## What is Libft ? - Description
 
 **Libft** is the very first project of the 42 Common Core. While it is a global refresher of the *Piscine*, some new material can also be learned throughout the project (see **Part 3 - Linked Lists**).
@@ -17,13 +26,13 @@ Basically, **static libraries** are just a collection of object files that are m
 
 ### What are the main benefits of a static library ? 
 
-#### Reusability
+* Reusability
 Once created, the static library **libft.a** can be reused by just linking it.
 
-#### Portability
+* Portability
 The executable works anywhere, the library file is no longer needed to run the program.
 
-#### Organisation
+* Organisation
 Keeps a project clean, without multiple .c files.
 
 ## What is **in** Libft ?
@@ -78,11 +87,11 @@ Basically, once **libft.a** is created, all the functions are packaged into one 
 
 ## Resources
 
-[How to Create a Static Library in C?](https://www.geeksforgeeks.org/c/how-to-create-a-static-library-in-c/)
+* [How to Create a Static Library in C?](https://www.geeksforgeeks.org/c/how-to-create-a-static-library-in-c/)
 
-[Static Libraries in C : all you need to know](https://medium.com/all-you-need-to-know-about-c-static-librairies/static-libraries-in-c-all-you-need-to-know-6f620a8370f7)
+* [Static Libraries in C : all you need to know](https://medium.com/all-you-need-to-know-about-c-static-librairies/static-libraries-in-c-all-you-need-to-know-6f620a8370f7)
 
-[All you need to know about C Static libraries](https://dev.to/iamkhalil42/all-you-need-to-know-about-c-static-libraries-1o0b)
+* [All you need to know about C Static libraries](https://dev.to/iamkhalil42/all-you-need-to-know-about-c-static-libraries-1o0b)
 
 ## AI use
 
