@@ -62,7 +62,7 @@ struct s_list     *next;
 
 As said before, a **static library** is a collection of precompiled code that gets bundled directly into an executable at compile time.
 
-Creating the **libft.a** file is done through the Makefile, by running `make` to obtain **libft.a**, or `make clean` to also remove all the object files (.o).
+Creating the **libft.a** file is done through the Makefile, by running `make` to obtain **libft.a**, then `make clean` to also remove all the object files (.o).
 
 Our static library is now created ! To use it with a main.c file, the command is : 
 
