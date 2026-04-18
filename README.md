@@ -3,6 +3,10 @@
 # Libft - 42 Belgium
 My very first own library of functions, based on some of the Standard C library functions, as well as some additional ones, aiming at dealing with strings, files  and linked lists.
 
+## Status
+
+Validated on April 18th 2026 with 100%.
+
 ## Table of Contents
 
 * [What is Libft ? - Description](#what-is-libft-description)
