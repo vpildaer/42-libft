@@ -6,7 +6,7 @@
 /*   By: vpildaer <vpildaer@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 13:29:35 by vpildaer          #+#    #+#             */
-/*   Updated: 2026/04/14 15:25:47 by vpildaer         ###   ########.fr       */
+/*   Updated: 2026/04/18 12:53:03 by vpildaer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "lorem ipsum dolor sit amet";
-	char	*dest;
-	dest = src + 1;
-
-	char	*res;
-	res = ft_memmove(dest, "consectetur", 5);
-	printf("%s", res);
-	return (0);
-}*/
